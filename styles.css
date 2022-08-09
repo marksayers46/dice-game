@@ -64,13 +64,26 @@ h2 {
   font-size: 2rem;
 }
 
+@media (max-width: 595px) {
+  .player-name {
+    color: blue;
+    font-size: 1.7rem;
+  }
+}
+
 .active {
   color: red;
   font-weight: bold;
 }
 
 .player-score {
-  font-size: 4rem;;
+  font-size: 4rem;
+}
+
+@media (max-width: 595px) {
+  .player-score {
+  font-size: 3rem;
+  }
 }
 
 .player-current-box {
@@ -79,6 +92,12 @@ h2 {
   margin-top: 3.5rem;
   border-radius: 15px;
   opacity: 0.4;
+}
+
+@media (max-width: 595px) {
+  .player-current-box {
+    padding: 1.5rem;
+  }
 }
 
 .player-current-label {
