@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:  "Montserrat", sans-serif;
+}
+
+/* general styling */
+body {
+  background: linear-gradient(to right, #e0dbdb, #b5b1b1);
+  margin: 0% 5%;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.4;
+}
+  
+h1 {
+  font-size: 3rem;
+  color: rgba(56,56,56);
+  margin: 3rem 0rem;
+}
+
+main {
+  background-color: #000;
+  height: 35rem;
+  border: 1px solid #000;
+  box-shadow: 0px 18px 18px 18px #888888;
+}
+
+.game-container {
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+  color: #ffff;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* player styling */
+.players-container {
+  display: flex;
+}
+
+.player-0,
+.player-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+.player-name {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.active {
+  color: red;
+  font-weight: bold;
+}
+
+.player-score {
+  font-size: 4rem;;
+}
+
+.player-current-box {
+  background-color: #ffff;
+  padding: 2rem;
+  margin-top: 3.5rem;
+  border-radius: 15px;
+  opacity: 0.4;
+}
+
+.player-current-label {
+  color: #000;
+}
+
+p {
+  color: #000;
+  opacity: 0;
+}
+
+.player-current-score {
+  color: #000;
+  text-align: center;
+}
+
+/* dice styling */
+.dice {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+img {
+  width: 70%;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.winner {
+  font-weight: bold;
+  color: #000;
+  background-color: red;
+} 
+
+.winner .player-name {
+  color: #000;
+}
+
+.winner .player-current-box {
+  opacity: 0;
+} 
+
+.winner .winner-text {
+  color: #fff;
+  opacity: 1;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+/* button styling */
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  transform: scale(1.2);
+  transition: all 0.8s linear;
+}
+
+footer {
+  text-align: center;
+  margin-top: 4.5rem;
+}
+
+footer a{
+  color: #000;
+  text-decoration: underline;
+}
+
+footer a:hover{
+  color: red;
+}
